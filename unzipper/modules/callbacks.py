@@ -1,4 +1,4 @@
-# Copyright (c) 2023 EDM115
+# Copyright (c) 2023 
 import os
 import re
 import shutil
@@ -224,7 +224,7 @@ async def unzipper_cb(unzip_bot: Client, query: CallbackQuery):
                             if fext not in extentions_list["archive"]:
                                 await del_ongoing_task(user_id)
                                 return await query.message.edit(
-                                    "This file is NOT an archive 😐\nIf you believe it's an error, send the file to **@EDM115**"
+                                    "This file is NOT an archive 😐\nIf you believe it's an error, send the file to **@Lullaby330**"
                                 )
                         archive = f"{download_path}/archive_from_{user_id}{fname}"
                         location = archive
@@ -277,7 +277,7 @@ async def unzipper_cb(unzip_bot: Client, query: CallbackQuery):
                     if fext not in extentions_list["archive"]:
                         await del_ongoing_task(user_id)
                         return await query.message.edit(
-                            "This file is NOT an archive 😐\nIf you believe it's an error, send the file to **@EDM115**"
+                            "This file is NOT an archive 😐\nIf you believe it's an error, send the file to **@Lullaby330**"
                         )
                 # Makes download dir
                 os.makedirs(download_path)
@@ -297,7 +297,7 @@ async def unzipper_cb(unzip_bot: Client, query: CallbackQuery):
                 await del_ongoing_task(user_id)
                 return await answer_query(
                     query,
-                    "Fatal query parsing error 💀 Please contact @EDM115 with details and screenshots",
+                    "Fatal query parsing error 💀 Please contact @Lullaby330 with details and screenshots",
                     answer_only=True,
                     unzip_client=unzip_bot,
                 )
@@ -653,7 +653,7 @@ async def unzipper_cb(unzip_bot: Client, query: CallbackQuery):
             )
 
         await query.message.edit(
-            "**Successfully uploaded ✅**\n\n**Join @EDM115bots ❤️**")
+            "**Successfully uploaded ✅**")
         await log_msg.reply(Messages.HOW_MANY_UPLOADED.format(sent_files))
         await update_uploaded(user_id, upload_count=sent_files)
         await del_ongoing_task(user_id)
