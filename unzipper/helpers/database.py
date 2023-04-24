@@ -1,4 +1,4 @@
-# Copyright (c) 2023 EDM115
+# Copyright (c) 2023 
 
 from motor.motor_asyncio import AsyncIOMotorClient
 from requests import post
@@ -90,7 +90,7 @@ async def check_user(message):
     is_banned = await is_user_in_bdb(message.from_user.id)
     if is_banned:
         await message.reply(
-            "**Sorry you're banned 💀**\n\nReport this at @EDM115 if you think this is a mistake, I can unban you"
+            "**Sorry you're banned 💀**\n\nReport this at @Lullaby330 if you think this is a mistake, I can unban you"
         )
         await message.stop_propagation()
         return
