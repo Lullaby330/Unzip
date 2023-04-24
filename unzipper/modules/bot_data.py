@@ -1,4 +1,4 @@
-# Copyright (c) 2023 EDM115
+# Copyright (c) 2023 Lullaby330
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 # Inline buttons
@@ -157,7 +157,7 @@ Hi **{}** 👋, I'm **Unarchiver bot** 🥰
 
 I can extract archives like `zip`, `rar`, `tar`, …
 
-**Made with ❤️ by @EDM115bots**
+**Made with ❤️ by @Lullaby330**
     """
     # **This is BETA version !** May be a lot buggy, but with new features. Better waiting for the stable version at daytime… 🙂
 
@@ -177,14 +177,9 @@ I can extract archives like `zip`, `rar`, `tar`, …
     **2.** Please don’t send corrupted files ! If you sent one by mistake just send **/clean**
     **3.** If your archive have +95 files in it then bot can’t show all of extracted files to select from (yet). So in that case if you can’t see your file in the buttons just click on `Upload all 📤` button. It will send all extracted files to you !
 
-
-**• Got an error ?**
-    Visit edm115.eu.org/unzip#help
-
-
 **• I wanna have help 🥺**
 
-    PM me at **@EDM115**
+    PM me at **@Lullaby330**
     """
 
     ABOUT_TXT = """
@@ -192,10 +187,10 @@ I can extract archives like `zip`, `rar`, `tar`, …
 
 • **Language :** [Python 3.11.1](https://www.python.org/)
 • **Framework :** [Pyrogram 2.0.99](https://pyrogram.org/)
-• **Source code :** [EDM115/unzip-bot](https://github.com/EDM115/unzip-bot/tree/beta)
-• **Developer :** [EDM115](https://github.com/EDM115)
+• **Source code :** [Beli Script](https://t.me/Lullaby330)
+• **Developer :** [Lullaby](https://t.me/Lullaby330)
 
-**Made with ❤️ by @EDM115bots**
+**Made with ❤️ by @Lullaby330**
     """
 
     LOG_TXT = """
@@ -255,7 +250,7 @@ An error happened for `{}` 😕
 **Error type :** `{}`
 **Error message :** `{}`
 
-Please report this at @EDM115 if you think this is a serious error
+Please report this at @Lullaby330 if you think this is a serious error
     """
 
     REPORT_TEXT = """
@@ -297,7 +292,7 @@ have been saved from the URL
 
 **⚠ IN ALL CASES ⚠**, please send **/clean**, else you couldn’t send any other task 🙂🔫 (may be fixed in the future)
 
-Please report this at @EDM115 if you think this is a serious error
+Please report this at @Lullaby330 if you think this is a serious error
     """
 
     ERROR_TXT = """
@@ -305,7 +300,7 @@ Please report this at @EDM115 if you think this is a serious error
 
 `{}`
 
-Please report this at @EDM115 if you think this is a serious error
+Please report this at @Lullaby330 if you think this is a serious error
     """
 
     CANCELLED_TXT = """
