@@ -1,4 +1,4 @@
-# Copyright (c) 2023 EDM115
+# Copyright (c) 2023 
 import logging
 import os
 import signal
@@ -50,7 +50,7 @@ while running:
         if check_logs():
             LOGGER.info("Log channel alright")
             LOGGER.info("Starting bot…")
-            LOGGER.info("Bot is running now ! Join @EDM115bots")
+            LOGGER.info("Bot is running now !")
             idle()
         else:
             try:
