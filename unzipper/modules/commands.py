@@ -260,7 +260,7 @@ async def report_this(_, message: Message):
     r_msg = message.reply_to_message
     u_id = message.from_user.id
     if not r_msg:
-        return await sd_msg.edit("Reply to a message to report it to @EDM115")
+        return await sd_msg.edit("Reply to a message to report it to @Lullaby330")
     await sd_msg.edit("Sending it, please wait… 😪")
     await unzipperbot.send_message(
         chat_id=Config.LOGS_CHANNEL,
