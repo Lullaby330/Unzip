@@ -83,7 +83,7 @@ async def extract_archive(_, message: Message):
     download_path = f"{Config.DOWNLOAD_LOCATION}/{user_id}"
     if os.path.isdir(download_path):
         return await unzip_msg.edit(
-            "Already one process is running, don't spam 😐\n\nWanna clear your files from my server ? Then just send **/clean** command"
+            "Sudah satu proses berjalan, jangan spam 😐\n\nIngin menghapus file Anda dari server saya? Kemudian kirimkan perintah **/clean**"
         )
     if message.text and (re.match(https_url_regex, message.text)):
         await unzip_msg.edit(
@@ -96,7 +96,7 @@ async def extract_archive(_, message: Message):
             reply_markup=Buttons.CHOOSE_E_F__BTNS,
         )
     else:
-        await unzip_msg.edit("Send a valid archive/URL 🙄")
+        await unzip_msg.edit("Kirim arsip/URL yang valid 🙄")
 
 
 # Waiting for implementing CallbackQuery button for cancel
@@ -108,14 +108,14 @@ async def cancel_task_by_user(_, message):
     except:
         pass
     await unzipperbot.stop_transmission()
-    await message.reply("Your task have successfully been canceled ❌")
+    await message.reply("Tugas Anda telah berhasil dibatalkan ❌")
 
 
 # For splitted archives
 @Client.on_message(filters.private & filters.command("merge"))
 async def merging(_, message: Message):
     merge_msg = await message.reply(
-        "Send me **all** the splitted files (.001, .002, .00×, …)\n\nOnce you sent them all, click on the `Merge 🛠️` button",
+        "Kirimi saya **semua** file yang dipisahkan (.001, .002, .00×, …)\n\nSetelah Anda mengirim semuanya, klik tombol `Merge 🛠️`",
         reply_markup=Buttons.MERGE_THEM_ALL,
     )
     startid = merge_msg.id + 1
@@ -213,7 +213,7 @@ async def broadcast_this(_, message: Message):
         return await bc_msg.edit("Reply to a message to broadcast it 📡")
     users_list = await get_users_list()
     # trying to broadcast
-    await bc_msg.edit("Broadcasting has started, this may take a while 😪")
+    await bc_msg.edit("Broadcast telah dimulai, ini mungkin memakan waktu cukup lama 😪")
     success_no = 0
     failed_no = 0
     total_users = await count_users()
